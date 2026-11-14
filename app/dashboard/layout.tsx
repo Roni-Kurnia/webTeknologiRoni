@@ -1,10 +1,6 @@
 import SideNav from "@/app/dashboard/sidenav";
 import Footer from "@/app/ui/footer";
-
 import { headers } from "next/headers";
-// di dalam Layout (async):
-const h = await headers();
-console.log("proto:", h.get("x-forwarded-proto"), "host:", h.get("host"));
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
